@@ -64,10 +64,13 @@ project has been used by some commercial corporations. Free and open source, dep
 
 
 ### 注意事项:
-
 + Win工程中若需要使用静态库，需单独编译
 + 本项目的C++实现和Python实现无任何关联，都为单独实现
 + 在编译C++工程的时候必须要使用OpenCV 3.3(DNN 库)，否则无法编译 
+
++错误C1083无法打开包括文件: “FastDeskew.h”: No such file or directory	P
+解决方法：项目-》属性》c/c++目录》附加包含目录》..\lpr\include
+opencv3.4.1的话对应的库目录和包含目录均需修改，不想修改的话把opencv配置在D盘即可。然后如果你的opencv为3.4.1把附加依赖改为opencv_world341d.lib/opencv_world341.lib选一个即可。选后者的话注意修改项目为release版。
 
 ### Python 依赖
 
